@@ -1,0 +1,72 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+.page {
+  width: 100%;
+  font-family: "Roobert";
+  font-style: normal;
+  font-weight: 400;
+  color: #1c1c1c;
+  background-color: #ebebeb;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.header {
+  max-width: 1920px;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+ display: flex;
+ align-items: center;
+ max-width: 210px;
+}
+
+.header__image {
+    width: 52px;
+    height: 52px;
+}
+
+.header__text {
+ font-size: 15px;
+ line-height: 110%;
+ letter-spacing: -0.01em;
+ padding-left: 8px;
+ color: #1c1c1c;
+}
+
+.header__home {
+ display: flex;
+ align-items: center;
+}
+
+.header__link {
+ text-decoration: none;
+ list-style-type: none;   
+ color: #1c1c1c;
+ font-size: 55px;
+}
+
+.content {
+
+}
+
+.name {
+ display: flex;
+ justify-content: center;
+ max-width: 1920px;
+ padding: 20px 20px 0;
+ margin: 0 auto;
+}
+
+.name__title {
+ font-size: 115px;
+ font-family: "M-LX3I3DISPLAY";
+}
