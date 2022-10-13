@@ -4,8 +4,6 @@
 .page {
   width: 100%;
   font-family: "Roobert";
-  font-style: normal;
-  font-weight: 400;
   color: #1c1c1c;
   background-color: #ebebeb;
   -webkit-font-smoothing: antialiased;
@@ -26,16 +24,16 @@
 .header__logo {
  display: flex;
  align-items: center;
- max-width: 210px;
+ width: 259px;
 }
 
 .header__image {
-    width: 52px;
-    height: 52px;
+    width: 60px;
+    height: 60px;
 }
 
 .header__text {
- font-size: 15px;
+ font-size: 16px;
  line-height: 110%;
  letter-spacing: -0.01em;
  padding-left: 8px;
@@ -48,25 +46,83 @@
 }
 
 .header__link {
+ font-family: "Radiotechnika";
  text-decoration: none;
  list-style-type: none;   
  color: #1c1c1c;
- font-size: 55px;
+ font-size: 35px;
+}
+
+.header__briefcase {
+  width: 37px;
+  height: 37px;
+  padding-left: 7px;
+  padding-bottom: 6px;
+}
+
+.header__copyright {
+ display: flex;
+ width: 250px;
+ justify-content: end;
+ align-items: center;
+}
+
+.header__copyright_text{
+ font-size: 16px;
+ line-height: 110%;
+ letter-spacing: -0.01em;
+ color: #1c1c1c;
 }
 
 .content {
 
 }
 
+
 .name {
  display: flex;
  justify-content: center;
  max-width: 1920px;
- padding: 20px 20px 0;
+ padding: 30px 20px 0;
  margin: 0 auto;
 }
 
 .name__title {
- font-size: 115px;
- font-family: "M-LX3I3DISPLAY";
+ font-size: 178px;
+ margin: 0;
+}
+
+.name__title_italic {
+  font-family: "RoxboughCF";
+}
+
+.info {
+  max-width: 1920px;
+  padding: 70px 20px 0;
+  margin: 0 auto;
+ 
+}
+
+.info__container {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 20px;
+  color: #1c1c1c;
+  margin: 0;
+}
+
+.info__text {
+  padding-right: 470px;
+  width: 60px;
+}
+
+.info__text:last-child {
+  padding-right: 0px;
+}
+
+.info__number {
+  font-size: 22px;
+  color: #7a7a7a;
 }

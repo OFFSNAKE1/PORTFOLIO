@@ -1,7 +1,26 @@
-@font-face {
-src:
-      url("../fonts/Roobert/Roobert-Regular.ttf") format("ttf");
-  font-family: "Roobert";
-  font-weight: 400;
-}
+   @font-face {
+    font-family: "Roobert";
+    src: url("../fonts/Roobert/Roobert-Regular.woff2"),
+         url("../fonts/Roobert/Roobert-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    }
 
+    @font-face {
+      font-family: "RoxboughCF";
+      src: url("../fonts/RoxboroughCF-HeavyItalic/RoxboroughCF-HeavyItalic.woff2"),
+           url("../fonts/RoxboroughCF-HeavyItalic/RoxboroughCF-HeavyItalic.woff");
+      font-weight: 900;
+      font-display: swap;
+      font-style: italic;
+      }
+
+      @font-face {
+          font-family: "Radiotechnika";
+          src: url("../fonts/Radiotechnika/Radiotechnika.woff2"),
+               url("../fonts/Radiotechnika/Radiotechnika.woff");
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+          }
