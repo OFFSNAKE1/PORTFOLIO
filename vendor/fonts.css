@@ -16,7 +16,16 @@
       font-style: italic;
       }
 
-      @font-face {
+    @font-face {
+       font-family: "RoxboughCF-Regular";
+       src: url("../fonts/RoxboroughCF-Regular/RoxboroughCF-Regular.woff2"),
+            url("../fonts/RoxboroughCF-Regular/RoxboroughCF-Regular.woff");
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+       }
+
+    @font-face {
           font-family: "Radiotechnika";
           src: url("../fonts/Radiotechnika/Radiotechnika.woff2"),
                url("../fonts/Radiotechnika/Radiotechnika.woff");
