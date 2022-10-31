@@ -24,12 +24,3 @@
        font-display: swap;
        font-style: normal;
        }
-
-    @font-face {
-          font-family: "Radiotechnika";
-          src: url("../fonts/Radiotechnika/Radiotechnika.woff2"),
-               url("../fonts/Radiotechnika/Radiotechnika.woff");
-          font-weight: 400;
-          font-display: swap;
-          font-style: normal;
-          }

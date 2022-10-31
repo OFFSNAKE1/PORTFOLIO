@@ -7,24 +7,18 @@
   <link rel="stylesheet" href="./pages/index.css">
   <title>Портфолио</title>
 </head>
-<body class="page">
+<body>
 
     <header class="header">
-      <div class="header__logo">
-            <img class="header__image" src="./images/globe-logo.png" alt="Логотип">  
-            <span class="header__text">Open for any collaborations and offers</span>
-      </div>
-      <div class="header__home">
-            <a class="header__link" href="#">ПОРТФОЛИО</a>
-            <img class="header__briefcase" src="./images/briefcase (2).png" alt="Картинка Кейс">
-      </div>
-      <div class="header__copyright"> 
-        <span class="header__copyright_text">©2022</span>
-  </div>
+        <div class="header__home">
+              <a class="header__link" href="#">PORTFOLIO</a>
+              <img class="header__briefcase" src="./images/briefcase.png" alt="Картинка Кейс">
+        </div>
+            <button type="button" class="menu__open-button"></button>
     </header>
     
 <main class="content">
-  
+
     <section class="name">
             <h1 class="name__title">NIKOLAY <span class="name__title_italic">SHISHKIN</span></h1>
     </section>
@@ -32,19 +26,55 @@
     <section class="info">
       <ul class="info__container">
         <li class="info__text">
-          <span class="info__number">01</span> 
-          <a class="info__link" href="#" data-text="Works">Works</a>
-        </li>  
-        <li class="info__text">
-          <span class="info__number">02</span> 
-          <a class="info__link" href="#" data-text="About">About</a>
+          <span class="info__number info__number_left">01</span>
+          <a class="info__link" href="#" data-text="Works">
+            <span data-text="Works"></span>
+          </a>
         </li>
         <li class="info__text">
-          <span class="info__number">03</span> 
-          <a class="info__link" href="#" data-text="Contact">Contact</a>
+          <span class="info__number info__number_left">02</span>
+          <a class="info__link" href="#" data-text="About">
+            <span data-text="About"></span>
+          </a>
+        </li>
+        <li class="info__text">
+          <span class="info__number">03</span>
+          <a class="info__link" href="#" data-text="Contact">
+            <span data-text="Contact"></span>
+          </a>
         </li>
       </ul>
     </section>
+
+    <section class="description">
+      <div class="description__columns">
+        <div class="description__info">
+          <img class="description__image" src="./images/krest.svg" alt="Крест">
+          <p class="description__text">ПРИВЕТ, МЕНЯ ЗОВУТ НИКОЛАЙ И Я ГОТОВ ТВОРИТЬ ВМЕСТЕ С ВАМИ.</p>
+          <p class="description__text_hide">УВЛЕЧЕН СОЗДАНИЕМ НЕЗАБЫВАЕМЫХ И КРАСИВЫХ ЦИФРОВЫХ ДИЗАЙНОВ.</p>
+        </div>
+        <div class="description__gif">
+          <img class="description__gif-size" src="./images/man-gazeta.gif" alt="Мужчина с газетой">
+        </div> 
+        <div class="description__info description__hide">
+          <img class="description__image" src="./images/krest.svg" alt="Крест">
+          <p class="description__text">УВЛЕЧЕН СОЗДАНИЕМ НЕЗАБЫВАЕМЫХ И КРАСИВЫХ ЦИФРОВЫХ ДИЗАЙНОВ.</p>
+        </div>
+      </div>
+    </section>
+
+                            <!-- Меню бургер -->
+
+      <div class="menu popup">
+        <button type="button" class="menu__close-button"></button>
+        <div class="menu__links">
+          <a class="menu__link" href="#">Works</a>
+          <a class="menu__link" href="#">About</a>
+          <a class="menu__link" href="#">Contact</a>
+        </div>
+      </div>
+
+      <script src="./scripts/index.js"></script>
 
 </main>
 </body>
