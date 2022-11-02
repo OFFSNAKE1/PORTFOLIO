@@ -14,7 +14,7 @@ html,
 body {
   font-family: "Roobert"; 
   color: #1c1c1c;
-  background-color: #ebebeb;
+  background-color: #ebebeb; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -73,6 +73,8 @@ body {
    list-style-type: none;   
    color: #1c1c1c;
    font-size: 35px;
+   color: #1c1c1c;
+   background-color: #ebebeb; 
   }
   
   @media screen and (max-width: 1800px) {
@@ -142,3 +144,206 @@ body {
       padding-bottom: 4px;
     }  
   } 
+
+  .info {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    /* padding-bottom: 50px; */
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info {
+      padding-top: 60px;
+      /* padding-bottom: 62px; */
+    }
+  } 
+  
+  @media screen and (max-width: 1125px) {
+    .info {
+      display: none;
+    }
+  }   
+  
+  .info__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    color: #1c1c1c;
+    background: #ebebeb;
+    margin: 0;
+    padding-left: 0;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-bottom: #1c1c1c 2px solid;
+    
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__container {
+      justify-content: space-around;
+      text-align: center;  
+      height: 140px;
+    }
+  } 
+  
+  @media screen and (max-width: 1125px) {
+    .info__container {
+      display: none;
+    }
+  }   
+  
+  .info__container:has(.info__link:hover) .info__link:not(:hover) {
+    color: #7a7a7a;
+  }
+  
+  .info__text {
+    width: 110px;
+    font-size: 28px;
+    font-family: "RoxboughCF-Regular";
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__text {
+      font-size: 25px;
+      width: 92px;
+    }
+  }   
+  
+  .info__text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: 0%;
+    transition: all .5s ease;
+    background: #1c1c1c;
+    z-index: -11;
+  }
+  
+  .info__text:has(.info__link:hover)::before {
+    top: 0;
+    bottom: 0;
+  }
+  
+  .info__number {
+    font-size: 30px; 
+    color: #7a7a7a;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__number {
+      font-size: 27px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__number_left {
+      padding-left: 10px;
+    }
+  }  
+  
+  .info__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: #1c1c1c;
+  }
+  
+  .info__link:hover {
+    color: white;
+  }
+  
+  .info__link::before {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    font-size: 200px;
+    line-height: 120px;
+    font-family: "Roobert";
+    color: #474747;
+    overflow: hidden;
+    z-index: -10;
+    pointer-events: none;
+    transition: all .5s ease;
+    text-align: center;
+    transform: skewY(45deg);
+    transform-origin: 0% 0%;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__link::before {
+      font-size: 155px;
+    }
+  }
+  
+  @media screen and (max-width: 1300px) {
+    .info__link::before {
+      font-size: 150px;
+    }
+  }  
+  
+  .info__link:hover::before {
+    top: 0;
+    bottom: 0;
+    transform: skewY(0deg);
+  }
+  
+  .info__link>SPAN {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .info__link>SPAN::before {
+    content: attr(data-text);
+    display: block;
+    position: relative;
+    transform: translateY(0%);
+    transition: all .5s ease;
+    transform-origin: 100% 100%;
+  }
+  
+  .info__link:hover>SPAN::before {
+    transform: translateY(-100%) skewY(45deg);
+  }
+  
+  .info__link>SPAN::after {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transition: all .5s ease;
+    transform: skewY(45deg);
+    transform-origin: 0 0;
+  }
+  
+  .info__link:hover>SPAN::after {
+    top: 0;
+    transform: skewY(0);
+  }
+
+  .biography {
+    background-color: #1c1c1c;
+    color: #ebebeb;
+    width: 100%;
+    padding-top: 50px; 
+  }
+
+  /* .content {
+    width: 100%;
+  } */

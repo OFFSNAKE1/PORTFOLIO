@@ -7,6 +7,7 @@
     font-style: normal;
     }
 
+    
     @font-face {
       font-family: "RoxboughCF";
       src: url("../fonts/RoxboroughCF-HeavyItalic/RoxboroughCF-HeavyItalic.woff2"),
@@ -24,3 +25,35 @@
        font-display: swap;
        font-style: normal;
        }
+
+
+       @font-face {
+        font-family: "CormorantGaramond-Regular"; 
+        src: url("../fonts/CormorantGaramond-Regular/CormorantGaramond-Regular.woff2"),
+             url("../fonts/CormorantGaramond-Regular/CormorantGaramond-Regular.woff"),
+             url("../fonts/CormorantGaramond-Regular/CormorantGaramond-Regular.ttf");  
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+        }
+
+        @font-face {
+          font-family: "CormorantGaramond-SemiBold"; 
+          src: url("../fonts/CormorantGaramond-SemiBold/CormorantGaramond-SemiBold.woff2"),
+               url("../fonts/CormorantGaramond-SemiBold/CormorantGaramond-SemiBold.woff"),
+               url("../fonts/CormorantGaramond-SemiBold/CormorantGaramond-SemiBold.ttf");  
+          font-weight: 600;
+          font-display: swap;
+          font-style: normal;
+         }
+
+        @font-face {
+         font-family: "CormorantGaramond-Bold"; 
+         src: url("../fonts/CormorantGaramond-Bold/CormorantGaramond-Bold.woff2"),
+              url("../fonts/CormorantGaramond-Bold/CormorantGaramond-Bold.woff"),
+              url("../fonts/CormorantGaramond-Bold/CormorantGaramond-Bold.ttf");  
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+        }
+ 
