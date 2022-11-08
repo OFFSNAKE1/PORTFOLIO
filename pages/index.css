@@ -21,7 +21,6 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   height: 100%;
-  border: 1px solid red;
 }
 
 .header {
@@ -502,7 +501,7 @@ body {
   }
 }   
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .description__text {
     margin: 10px 0 20px; 
     font-size: 16px;
@@ -526,17 +525,11 @@ body {
 @media screen and (max-width: 600px) {
   .description__text_hide {
     margin: 0 0 65px; 
-  }
-}  
-
-@media screen and (max-width: 400px) {
-  .description__text_hide {
     font-size: 16px;
     width: 233px; 
     margin: 0 0 22px; 
   }
 }  
-
 
 .description__gif {
   width: 420px;
@@ -554,17 +547,11 @@ body {
   }
 }  
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .description__gif {
     width: 230px;
   }
 }  
-
-/* @media screen and (max-width: 330px) {
-  .description__gif {
-    width: 285px;
-  }
-}   */
 
 .description__gif-size {
   width: 100%;
@@ -573,9 +560,6 @@ body {
 .content {
   position: relative;
 }
-
-
-/* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ *//* ДОДЕЛАТЬ */
 
 .menu__open-button {
   top: 10px;
@@ -644,7 +628,7 @@ body {
   display: flex;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .3s linear, visibility .4s linear;
+  transition: opacity .2s linear, visibility .2s linear;
 }
 
 .menu__open {
@@ -654,18 +638,47 @@ body {
 }
 
 .menu__close-button {
-  width: 30px;
-  height: 30px;
-  background: url(../images/cross.png);
+  width: 50px;
+  height: 50px;
+  background: url(../images/close.png);
   border: none;
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: contain;
   align-self: center;
   position: absolute;
-  top: 10px;
-  right: 10px; 
+  top: 16px;
+  right: 26px; 
 }
+
+@media screen and (max-width: 600px) {
+  .menu__close-button {
+    width: 38px;
+    height: 38px;
+  }
+}  
+
+@media screen and (max-width: 500px) {
+  .menu__close-button {
+    top: 15px;
+    right: 24px; 
+  }
+}  
+
+@media screen and (max-width: 400px) {
+  .menu__close-button {
+    width: 36px;
+    height: 36px;
+    top: 18px;
+    right: 20px; 
+  }
+} 
+
+@media screen and (max-width: 330px) {
+  .menu__close-button {
+    top: 20px;
+  }
+} 
 
 .menu__links {
   display: flex;
@@ -682,6 +695,19 @@ body {
   margin-bottom: 10px;
   transition: opacity ease-in-out 0.4s;
 }
+
+@media screen and (max-width: 600px) {
+  .menu__link {
+    font-size: 80px;
+  }
+}  
+
+@media screen and (max-width: 350px) {
+  .menu__link {
+    font-size: 60px;
+  }
+}  
+
 
 .menu__link:hover {
  opacity: 0.6;
