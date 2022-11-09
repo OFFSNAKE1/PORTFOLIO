@@ -386,8 +386,6 @@ body {
 } 
 
 .name {
-  /* text-align: center;
-  max-width: 1814px; */
   padding: 30px 0px 0;
   margin: 0 auto;
   display: flex;
@@ -596,18 +594,12 @@ body {
   font-size: 16px;
 }
 
-/* Информация обо мне */
-
- /* .content {
-    width: 100%;
-  } */
-
 .biography {
   background-color: #1c1c1c;
   color: white;
   width: 100%;
   padding-top: 20px; 
-  padding-bottom: 30px; 
+  padding-bottom: 15px; 
   font-family: "CormorantGaramond-Regular";
   margin: 0 auto;
   display: flex;
@@ -658,7 +650,6 @@ body {
   background-color: #1c1c1c;
   color: white;
   width: 100%;
-  padding-bottom: 30px; 
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -675,34 +666,229 @@ body {
   width: 70%;
 }
 
-/* тест тут */
+/* БЛОК С ПРОГРЕСС БАРОМ */
 
 .skills {
   width: 100%;
   background-color: #1c1c1c;
   color: white;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
 }
 
 .skills__main-text {
   font-family: "CormorantGaramond-SemiBold";
   text-align: center;
   font-size: 50px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .skill {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas:
+      "bar1 bar5"
+      "bar2 bar6"
+      "bar3 bar7"
+      "bar4 bar8";
+  row-gap: 5px;  
+  column-gap: 20px;
+  max-width: 1000px;
+}
 
+.bar1 {
+  grid-area: bar1;
+}
+
+.bar2 {
+  grid-area: bar2;
+}
+
+.bar3 {
+  grid-area: bar3;
+}
+
+.bar4 {
+  grid-area: bar4;
+}
+
+.bar5 {
+  grid-area: bar5;
+}
+
+.bar6 {
+  grid-area: bar6;
+}
+
+.bar7 {
+  grid-area: bar7;
+}
+
+.bar8 {
+  grid-area: bar8;
+}
+
+.skill__size-container {
+  width: 470px;
+  height: 73px; 
 }
 
 .skill__text {
-
+  font-size: 22px;
+  color: white;
+  margin-bottom: 14px;
+  margin-left: 2px;
+  font-family: "CormorantGaramond-SemiBold";
 }
 
 .skill__progress-bar {
+  background: #525252;
+  width: 470px;
+  height: 10px;
+  border-radius: 5px;
+}
 
+.skill__progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.skill__progress-bar div span {
+  height: 40px;
+  width: 40px;
+  font-size: 14px;
+  border-radius: 50%;
+  background: #222;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill__html {
+  background: rgb(255, 188, 63);
+  animation: html 5s linear forwards;
+}
+
+.skill__css {
+  background: rgb(26, 108, 202);
+  animation: css 5s linear forwards;
+}
+
+.skill__js {
+  background: rgb(255, 255, 52);
+  animation: js 5s linear forwards;
+}
+
+.skill__ux-ui {
+  background: rgb(175, 28, 28);
+  animation: ux-ui 5s linear forwards;
+}
+
+.skill__figma {
+  background: rgb(149, 102, 206);
+  animation: figma 5s linear forwards;
+}
+
+.skill__photoshop {
+  background: rgb(46, 151, 221);
+  animation: photoshop 5s linear forwards;
+}
+
+.skill__premiere {
+  background: rgb(207, 70, 155);
+  animation: premiere 5s linear forwards;
+}
+
+.skill__ms-office {
+  background: rgb(55, 158, 60);
+  animation: ms-office 5s linear forwards;
 
 }
+
+.skill__html span {
+  border: 2px solid rgb(255, 188, 63);
+}
+
+.skill__css span {
+  border: 2px solid rgb(26, 108, 202);
+}
+
+.skill__js span {
+  border: 2px solid rgb(255, 255, 52);
+}
+
+.skill__ux-ui span {
+  border: 2px solid rgb(175, 28, 28);
+}
+
+.skill__figma span {
+  border: 2px solid rgb(149, 102, 206);
+}
+
+.skill__photoshop span {
+  border: 2px solid rgb(46, 151, 221);
+}
+
+.skill__premiere span {
+  border: 2px solid rgb(207, 70, 155);
+}
+
+.skill__ms-office span {
+  border: 2px solid rgb(55, 158, 60);
+}
+
+@keyframes html {
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes js {
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes ux-ui {
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes figma {
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes photoshop {
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes premiere {
+  100% {
+    width: 63%;
+  }
+}
+
+@keyframes ms-office {
+  100% {
+    width: 100%;
+  }
+}
+
