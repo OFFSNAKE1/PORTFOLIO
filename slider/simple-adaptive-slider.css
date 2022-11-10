@@ -6,8 +6,10 @@
 
 /* стили для корневого элемента слайдера */
 .itcss {
+  grid-area: itcss;
+  
   position: relative;
-  max-width: 600px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -16,7 +18,8 @@
 .itcss__wrapper {
   position: relative;
   overflow: hidden;
-  background-color: #eee;
+  /* background-color: #eee; */
+  border-radius: 10%;
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
@@ -87,7 +90,7 @@
 }
 
 .itcss__btn_prev::before {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); 
 }
 
 .itcss__btn_next::before {
@@ -98,34 +101,37 @@
 .itcss__indicators {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: -30px;
   left: 0;
   display: flex;
   justify-content: center;
-  margin: 0 15%;
   padding-left: 0;
   list-style: none;
   user-select: none;
 }
 
 .itcss__indicator {
-  flex: 0 1 auto;
-  width: 30px;
-  height: 2px;
+  width: 20px;
+  height: 20px;
   margin-right: 3px;
   margin-left: 3px;
-  background-color: rgb(255 255 255 / 50%);
-  background-clip: padding-box;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
   cursor: pointer;
+  background: url(../images/slider-swipe-opasity.png); 
+  background-repeat: no-repeat;
+  background-position: center; 
+  border-radius: 50%;  
+  opacity: 0.3;
 }
 
 .itcss__indicator_active {
-  background-color: #fff;
+  background: url(../images/slider-swipe.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  opacity: 1;
+
 }
 
 /* класс для отключения transition */
 .transition-none {
   transition: none;
-}
+} 
