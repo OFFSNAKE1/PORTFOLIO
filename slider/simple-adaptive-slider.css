@@ -7,11 +7,22 @@
 /* стили для корневого элемента слайдера */
 .itcss {
   grid-area: itcss;
-  
   position: relative;
   max-width: 480px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .itcss {
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .itcss {
+    max-width: 320px;
+  }
 }
 
 /* стили для wrapper */
@@ -110,6 +121,12 @@
   user-select: none;
 }
 
+@media screen and (max-width: 500px) {
+  .itcss__indicators {
+    bottom: -25px;
+  }
+}
+
 .itcss__indicator {
   width: 20px;
   height: 20px;
@@ -122,6 +139,22 @@
   border-radius: 50%;  
   opacity: 0.3;
 }
+
+@media screen and (max-width: 1050px) {
+  .itcss__indicator {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .itcss__indicator {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
 
 .itcss__indicator_active {
   background: url(../images/slider-swipe.png);

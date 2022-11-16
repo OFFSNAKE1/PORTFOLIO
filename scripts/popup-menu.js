@@ -18,3 +18,4 @@ menuOpenButton.addEventListener("click", function(evt) {
 menuCloseButton.addEventListener("click", function(evt) {
   closePopup(menuPopup);
 });
+
