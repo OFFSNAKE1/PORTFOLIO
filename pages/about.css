@@ -454,7 +454,7 @@ body {
    }
  }  
  
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 600px) {
    .name__title {
      font-size: 50px;
    }
@@ -626,7 +626,7 @@ body {
   }
 }  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .biography__info {
     grid-template-areas: 
   "biography__main-text"
@@ -667,7 +667,7 @@ body {
   }
 }  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .biography__image {
     width: 320px;
     height: 320px;
@@ -694,7 +694,7 @@ body {
   }
 }  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .biography__text {
     font-size: 22px;
     margin-left: 35px;
@@ -731,7 +731,7 @@ body {
   }
 }  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .print-text__gif-size {
     width: 70%;
   }
@@ -779,7 +779,7 @@ body {
   transform: translateY(20px);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .skill {
     grid-template-areas:
       "text-main"
@@ -843,7 +843,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .skill__size-container {
     width: 320px;
   }
@@ -876,7 +876,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .skill__progress-bar {
     width: 320px;
   }
@@ -1055,7 +1055,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .hobby__info {
     grid-template-areas: 
     "hobby__main-text"
@@ -1088,7 +1088,7 @@ body {
   }
 }  
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .hobby__main-text {
     padding-bottom: 15px;
   }
@@ -1107,7 +1107,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .hobby__text {
     font-size: 22px;
     margin-left: 35px;
@@ -1130,7 +1130,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .hobby__image {
     width: 320px;
     height: 320px;
@@ -1159,7 +1159,7 @@ body {
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .footer {
     padding-top: 0px;
   }
@@ -1192,7 +1192,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .footer__email-link {
     font-size: 30px;
   }
@@ -1229,7 +1229,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .footer__email-image {
     width: 30px;
   }
@@ -1247,7 +1247,7 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .footer__text-little {
     font-size: 22px;
   }
@@ -1281,11 +1281,11 @@ body {
   }
 } 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .btn-up {
     background: url(../images/arrow-up-mobile.png);
-    width: 35px;
-    height: 35px;
+    width: 34px;
+    height: 34px;
     background-repeat: no-repeat;
     background-position: center; 
   }

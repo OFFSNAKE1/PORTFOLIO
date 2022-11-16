@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .itcss {
     max-width: 320px;
   }
@@ -121,7 +121,7 @@
   user-select: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .itcss__indicators {
     bottom: -25px;
   }
@@ -147,14 +147,12 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .itcss__indicator {
     width: 15px;
     height: 15px;
   }
 }
-
-
 
 .itcss__indicator_active {
   background: url(../images/slider-swipe.png);
