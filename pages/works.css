@@ -1,0 +1,654 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roobert"; 
+  color: #1c1c1c;
+  background-color: #ebebeb; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  height: 100%;
+}
+
+/* скролл */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7a7a7a;
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #535353;
+}
+
+.header {
+    padding: 25px 0px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .header {
+      padding: 15px 0px 0;
+    }
+  } 
+  
+  @media screen and (max-width: 1125px) {
+    .header {
+      padding: 14px 0px 0;
+    }
+  }  
+  
+  @media screen and (max-width: 600px) {
+    .header {
+      padding: 15px 0px 0;
+    }
+  }  
+  
+  @media screen and (max-width: 400px) {
+    .header {
+      padding: 18px 0px 0;
+    }
+  }  
+  
+  @media screen and (max-width: 330px) {
+    .header {
+      padding: 21px 0px 0;
+    }
+  }  
+  
+  .header__home {
+   display: flex;
+   align-items: center;
+  }
+  
+  .header__link {
+   font-family: "RoxboughCF-Regular";
+   text-decoration: none;
+   list-style-type: none;   
+   color: #1c1c1c;
+   font-size: 35px;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .header__link {
+      font-size: 35px;
+    }
+  }   
+  
+  @media screen and (max-width: 1125px) {
+    .header__link {
+      font-size: 40px;
+    }
+  }   
+  
+  @media screen and (max-width: 600px) {
+    .header__link {
+      font-size: 30px;
+    }
+  }   
+  
+  @media screen and (max-width: 400px) {
+    .header__link {
+      font-size: 25px;
+    }
+  }   
+  
+  @media screen and (max-width: 330px) {
+    .header__link {
+      font-size: 20px;
+    }
+  }   
+  
+  .header__briefcase {
+    width: 100%;
+    height: 38px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+  }
+  
+  @media screen and (max-width: 1125px) {
+    .header__briefcase {
+      width: 50px;
+      height: 50px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }  
+  } 
+  
+  @media screen and (max-width: 600px) {
+    .header__briefcase {
+      width: 40px;
+      height: 40px;
+    }  
+  } 
+  
+  @media screen and (max-width: 400px) {
+    .header__briefcase {
+      width: 35px;
+      height: 35px;
+    }  
+  } 
+  
+  @media screen and (max-width: 330px) {
+    .header__briefcase {
+      width: 30px;
+      height: 30px;
+      padding-bottom: 4px;
+    }  
+  }
+  
+  /* БЛОК С МЕНЮ ДЛЯ PC */
+  
+  .info {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 1125px) {
+    .info {
+      display: none;
+    }
+  }
+  
+  .info__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    color: #1c1c1c;
+    background-color: #ebebeb;
+    margin: 0;
+    padding-left: 0;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__container {
+      justify-content: space-around;
+      text-align: center;  
+      height: 140px;
+    }
+  } 
+  
+  @media screen and (max-width: 1125px) {
+    .info__container {
+      display: none;
+    }
+  }  
+  
+  .info__text {
+    width: 110px;
+    font-size: 28px;
+    font-family: "RoxboughCF-Regular";
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__text {
+      font-size: 25px;
+      width: 92px;
+    }
+  }
+  
+  .info__number {
+    font-size: 30px; 
+    color: #7a7a7a;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__number {
+      font-size: 27px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__number_left {
+      padding-left: 10px;
+    }
+  }  
+  
+  .info__link {
+    text-decoration: none;
+    list-style-type: none;
+    color: #1c1c1c;
+  }
+  
+  .info__link:hover {
+    color: white;
+  }
+  
+  .info__link::before {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    bottom: 50%;
+    transition: all .5s ease;
+    font-size: 200px;
+    line-height: 130px;
+    text-align: center;
+    font-family: "Roobert";
+    color: #474747;
+    background: #1c1c1c;
+    overflow: hidden;
+    z-index: -10;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .info__link::before {
+      font-size: 185px;
+      line-height: 120px;
+    }
+  }
+  
+  .info__link:hover::before {
+    top: 0;
+    bottom: 0;
+  }
+  
+  .info__link>SPAN {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .info__link>SPAN::before {
+    content: attr(data-text);
+    display: block;
+    position: relative;
+    transform: translateY(0%);
+    transition: all .5s ease;
+    transform-origin: 100% 100%;
+  }
+  
+  .info__link:hover>SPAN::before {
+    transform: translateY(-100%) skewY(45deg);
+  }
+  
+  .info__link>SPAN::after {
+    content: attr(data-text);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    transition: all .6s ease;
+    transform: skewY(45deg);
+    transform-origin: 0 0;
+  }
+  
+  .info__link:hover>SPAN::after {
+    top: 0;
+    transform: skewY(0);
+  }
+  /* чтобы ссылки становились серыми при наведении, работает только в гугл и сафари */
+  .info__container:has(.info__link:hover) .info__link:not(:hover) {
+    color: #7a7a7a;
+  }  
+  
+  /* блок с надписью и картинками + кнопка */
+  
+  .menu__open-button {
+    top: 10px;
+    right: 20px; 
+    width: 60px;
+    height: 60px;
+    background: url(../images/menu-open.png);
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    display: flex;
+    position: absolute;
+    display: none; 
+  }
+  
+  @media screen and (max-width: 1125px) {
+    .menu__open-button {
+      display: flex; 
+    }
+  }    
+  
+  @media screen and (max-width: 600px) {
+    .menu__open-button {
+      width: 45px;
+      height: 45px;
+    }
+  }  
+  
+  @media screen and (max-width: 500px) {
+    .menu__open-button {
+      top: 10px;
+      right: 18px; 
+    }
+  }  
+  
+  @media screen and (max-width: 400px) {
+    .menu__open-button {
+      top: 14px;
+      right: 15px; 
+      width: 40px;
+      height: 40px;
+  
+    }
+  }  
+  
+  @media screen and (max-width: 330px) {
+    .menu__open-button {
+      top: 16px;
+      right: 15px; 
+      width: 40px;
+      height: 40px;
+    }
+  } 
+
+  .name {
+    padding: 30px 0px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   
+   @media screen and (max-width: 1125px) {
+     .name {
+       padding: 25px 0px 0px;
+       max-width: 890px;
+     }
+   }   
+   
+   @media screen and (max-width: 1050px) {
+    .name {
+      justify-content: space-between;
+    }
+  }   
+  
+  @media screen and (max-width: 900px) {
+    .name {
+      justify-content: center;
+    }
+  }   
+  
+   @media screen and (max-width: 610px) {
+     .name {
+       padding: 40px 0px 0px;
+     }
+   }   
+   
+   .name__title {
+    font-size: 110px;
+    font-family: "RoxboughCF-Regular";
+    margin: 0;
+    color: #1c1c1c;
+    text-align: center;
+    vertical-align: middle;
+   }
+   
+   @media screen and (max-width: 1800px) {
+     .name__title {
+       font-size: 100px;
+     }
+   } 
+   
+   @media screen and (max-width: 1400px) {
+     .name__title {
+       font-size: 80px;
+       text-align: center;
+     }
+   }  
+   
+   @media screen and (max-width: 1050px) {
+     .name__title {
+       font-size: 60px;
+     }
+   }  
+  
+   @media screen and (max-width: 770px) {
+    .name__title {
+      font-size: 55px;
+    }
+  }  
+  
+   @media screen and (max-width: 610px) {
+     .name__title {
+       font-size: 45px;
+     }
+   }
+   
+  @media screen and (max-width: 400px) {
+     .name__title {
+       font-size: 35px;
+     }
+   }
+   
+  .name__image {
+    text-align: center;
+    max-width: 296px;
+  } 
+  
+  @media screen and (max-width: 1050px) {
+    .name__image {
+      max-width: 275px;
+    }
+  }
+  
+  @media screen and (max-width: 770px) {
+    .name__image {
+      max-width: 227px;
+    }
+  }
+  
+  @media screen and (max-width: 610px) {
+    .name__image {
+      max-width: 155px;
+    }
+  }
+  
+  .name__image-size {
+    width: 100%;
+  }
+  
+  /* меню-бургер */
+  
+  .popup {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s linear, visibility .2s linear;
+  }
+  
+  .menu__open {
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+  }
+  
+  .menu__close-button {
+    width: 50px;
+    height: 50px;
+    background: url(../images/close.png);
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+    position: absolute;
+    top: 16px;
+    right: 26px; 
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu__close-button {
+      width: 38px;
+      height: 38px;
+    }
+  }  
+  
+  @media screen and (max-width: 500px) {
+    .menu__close-button {
+      top: 15px;
+      right: 24px; 
+    }
+  }  
+  
+  @media screen and (max-width: 400px) {
+    .menu__close-button {
+      width: 36px;
+      height: 36px;
+      top: 18px;
+      right: 20px; 
+    }
+  } 
+  
+  @media screen and (max-width: 330px) {
+    .menu__close-button {
+      top: 20px;
+    }
+  } 
+  
+  .menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu__link {
+    font-family: "RoxboughCF-Regular";
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 90px;
+    margin-bottom: 10px;
+    transition: opacity ease-in-out 0.4s;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu__link {
+      font-size: 80px;
+    }
+  }  
+  
+  @media screen and (max-width: 350px) {
+    .menu__link {
+      font-size: 60px;
+    }
+  }  
+  
+  .menu__link:hover {
+   opacity: 0.6;
+  }
+  
+  .menu__link:last-of-type {
+    margin-bottom: 0px;
+  }
+  
+  .menu__author {
+    color: #ebebeb;
+    margin-top: 50px;
+    font-size: 16px;
+  }
+
+  /* кнока возврата назад */
+
+.btn-up {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background: url(../images/arrow-up-deskop.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+@media screen and (max-width: 1250px) {
+.btn-up {
+  right: 20px;
+}
+} 
+
+@media screen and (max-width: 1050px) {
+.btn-up {
+  right: 10px;
+}
+} 
+
+@media screen and (max-width: 900px) {
+.btn-up {
+  right: 5px;
+}
+} 
+
+@media screen and (max-width: 610px) {
+.btn-up {
+  background: url(../images/arrow-up-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 32px;
+  height: 32px;
+  right: 10px;
+}
+} 
+  
+.btn-up:hover {
+  opacity: 0.5;
+} 
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+}
+
+.works {
+  width: 1699px;  
+  height: 20px;
+  border: 3px solid #1c1c1c;
+}

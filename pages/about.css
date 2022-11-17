@@ -659,7 +659,7 @@ body {
   "biography__image"
   "biography__text";
   justify-items: center;
-  max-width: 320px;
+  max-width: 500px;
   gap: 10px;
   }
 }  
@@ -692,6 +692,13 @@ body {
     padding-bottom: 5px;
   }
 }  
+
+/* @media screen and (max-width: 380px) {
+  .biography__main-text {
+    font-size: 30px;
+    padding-bottom: 5px;
+  }
+}   */
 
 .biography__image {
   grid-area: biography__image;
@@ -757,16 +764,11 @@ body {
 
 @media screen and (max-width: 610px) {
   .biography__text {
-    font-size: 17px;
-  }
-}  
-
-@media screen and (max-width: 350px) {
-  .biography__text {
+    font-size: 18px;
     margin: 0 10px;
+
   }
 }  
-
 
 /* Блок с печатаньем текста */
 
@@ -1247,7 +1249,7 @@ body {
     "hobby__main-text"
     "itcss"
     "hobby__text";
-    max-width: 320px;
+    max-width: 500px;
 
   }
 } 
@@ -1315,16 +1317,11 @@ body {
 
 @media screen and (max-width: 610px) {
   .hobby__text {
-    font-size: 17px;
+    font-size: 18px;
     padding-top: 40px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .hobby__text {
     margin: 0 10px;
   }
-}  
+}
 
 .hobby__image {
   width: 480px;
@@ -1440,7 +1437,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   .footer__email-link {
     font-size: 28px;
   }
@@ -1496,7 +1493,7 @@ body {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   .footer__email-image {
     width: 33px;
   }
