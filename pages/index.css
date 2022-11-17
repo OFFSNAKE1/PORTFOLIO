@@ -151,37 +151,37 @@ body {
 
 @media screen and (max-width: 1125px) {
   .name {
-    padding: 25px 0px 12px;
+    padding: 25px 0px 30px;
     max-width: 890px;
+  }
+}   
+
+@media screen and (max-width: 770px) {
+  .name {
+    padding: 35px 0px 40px;
+    max-width: 500px;
   }
 }   
 
 @media screen and (max-width: 600px) {
   .name {
-    padding: 20px 0px 25px;
-    max-width: 500px;
+    padding: 30px 0px 30px;
+    max-width: 400px;
   }
 }   
 
 @media screen and (max-width: 400px) {
   .name {
-    padding: 36px 0px 25px;
-    max-width: 400px;
+    padding: 25px 0px 20px;
   }
 }   
 
 @media screen and (max-width: 330px) {
   .name {
-    padding: 35px 0px 23px;
-    max-width: 350px;
+    padding: 20px 0px 23px;
+    max-width: 330px;
   }
 }   
-
-@media screen and (max-width: 280px) {
-  .name {
-    max-width: 270px;
-  }
-}  
 
 .name__title {
  font-size: 178px;
@@ -203,32 +203,37 @@ body {
 
 @media screen and (max-width: 1125px) {
   .name__title {
+    font-family: "Roobert";
     font-size: 90px;
-    font-family: "Roobert"; 
+  }
+}  
+
+@media screen and (max-width: 770px) {
+  .name__title {
+    font-family: "Roobert";
+    line-height: 100px;
+    font-size: 110px;
   }
 }  
 
 @media screen and (max-width: 600px) {
   .name__title {
-    font-size: 60px;
+    font-size: 75px; 
+    line-height: 65px;
   }
 }  
 
 @media screen and (max-width: 400px) {
   .name__title {
-    font-size: 56px;
+    font-size: 66px;
+    line-height: 60px;
   }
 }
 
 @media screen and (max-width: 330px) {
   .name__title {
-    font-size: 47px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .name__title {
-    font-size: 44px;
+    font-size: 52px;
+    line-height: 49px;
   }
 }
 
@@ -236,11 +241,11 @@ body {
   font-family: "RoxboughCF";
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 770px) {
   .name__title_italic {
-    font-family: "Roobert"; 
+    font-family: "Roobert";
   }
-}  
+}   
 
 
 .info {
@@ -456,35 +461,32 @@ body {
   }
 }   
 
-.description__text {
-  margin: 50px 0 100px; 
-  width: 333px;
-  font-size: 23px;
-}
-
-@media screen and (max-width: 1800px) {
-  .description__text {
-    font-size: 20px;
-    width: 294px;
+@media screen and (max-width: 330px) {
+  .description__image {
+    width: 25px;
+    height: 25px;
   }
-} 
+}  
+
+.description__text {
+  margin: 40px 0 100px; 
+  width: 295px;
+  font-size: 20px;
+  font-family: "Roobert";
+  line-height: 23px;
+}
 
 @media screen and (max-width: 1400px) {
   .description__text {
     font-size: 18px;
-    width: 262px;
+    width: 270px;
   }
 }   
 
 @media screen and (max-width: 1125px) {
   .description__text {
+    width: 264px;
     margin: 15px 0 25px; 
-  }
-}   
-
-@media screen and (max-width: 1024px) {
-  .description__text {
-    margin: 10px 0 25px; 
   }
 }   
 
@@ -492,7 +494,16 @@ body {
   .description__text {
     margin: 10px 0 20px; 
     font-size: 16px;
-    width: 233px;
+    width: 240px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .description__text {
+    font-size: 14px;
+    line-height: 15px;
+    width: 212px;
   }
 }   
  
@@ -503,20 +514,41 @@ body {
 @media screen and (max-width: 1125px) {
   .description__text_hide {
     display: flex;
-    margin: 0 0 45px; 
+    margin: 0 0 30px; 
     font-size: 18px;
-    width: 262px; 
+    line-height: 23px;
+    width: 264px; 
+  }
+}  
+
+@media screen and (max-width: 1125px) {
+  .description__text_hide {
+    margin: 0 0 10px; 
   }
 }  
 
 @media screen and (max-width: 600px) {
   .description__text_hide {
-    margin: 0 0 65px; 
     font-size: 16px;
-    width: 233px; 
-    margin: 0 0 22px; 
+    width: 240px; 
+    line-height: 18px;
   }
 }  
+
+@media screen and (max-width: 400px) {
+  .description__text_hide {
+    margin: 0 0 5px; 
+  }
+}  
+
+
+@media screen and (max-width: 330px) {
+  .description__text_hide {
+    font-size: 14px;
+    line-height: 15px;
+    width: 212px; 
+  }
+} 
 
 .description__gif {
   width: 420px;
