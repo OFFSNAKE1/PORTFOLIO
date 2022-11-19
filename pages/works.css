@@ -258,10 +258,10 @@ body {
     top: 50%;
     bottom: 50%;
     transition: all .5s ease;
-    font-size: 200px;
+    font-size: 215px;
     line-height: 130px;
     text-align: center;
-    font-family: "Roobert";
+    font-family: "Roobert"; 
     color: #474747;
     background: #1c1c1c;
     overflow: hidden;
@@ -648,7 +648,116 @@ body {
 }
 
 .works {
-  width: 1699px;  
-  height: 20px;
-  border: 3px solid #1c1c1c;
+  background-color: #ebebeb; 
+  color: #1c1c1c;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works__container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  width: 1300px; 
+}
+
+.works__main-text {
+  text-align: start;
+  font-size: 50px;
+  font-family: "CormorantGaramond-SemiBold"; 
+  border-bottom: #808080 solid 1px;
+}
+
+.works__portfolio {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.work {
+
+}
+
+.worl__link {
+  cursor: url("../images/Circle.svg") 2 2, pointer;	
+}
+
+.work__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  /* background-color: rgb(31, 31, 31); */
+  overflow: hidden;
+}
+
+.work__image-size {
+  width:100%;
+  transition: all .7s ease;
+}
+
+.work__image-size:hover {
+  transform:scale(1.2);
+}
+
+.work__text-container {
+}
+
+.work__description {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.work__main-description {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #808080 solid 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.work__main-text {
+  /* padding-top: 10px;
+  padding-bottom: 5px; */
+  font-family: "CormorantGaramond-SemiBold"; 
+  font-size: 35px;
+  color: #1c1c1c;
+
+}
+
+.work__description-image {
+  /* width: 40px;
+  height: 40px; */
+  display: flex;
+  align-items: center;
+}
+
+.work__description-image-size {
+  /* width: 100%; */
+  width: 40px;
+  height: 40px; 
+  margin-right: 7px;
+}
+
+.work__description-image-size:last-child {
+  /* width: 100%; */
+  margin-right: 0px;
+}
+
+.work__text {
+  font-family: "CormorantGaramond-SemiBold";  
+  color: #1c1c1c;
+  font-size: 29px;
+}
+
+.work__number {
+  font-size: 29px;
+  font-family: "CormorantGaramond-SemiBold";  
+  color: #1c1c1c;
 }

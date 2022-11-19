@@ -661,6 +661,7 @@ body {
   justify-items: center;
   max-width: 500px;
   gap: 10px;
+  margin: 0 15px;
   }
 }  
 
@@ -748,25 +749,26 @@ body {
   grid-area: biography__text;
   font-size: 25px;
   align-self: center;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 1050px) {
   .biography__text {
     font-size: 23px;
+    line-height: 27px;
   }
 }  
 
 @media screen and (max-width: 900px) {
   .biography__text {
     font-size: 20px;
+    line-height: 25px;
   }
 }  
 
 @media screen and (max-width: 610px) {
   .biography__text {
-    font-size: 18px;
-    margin: 0 10px;
-
+    font-size: 19px;
   }
 }  
 
@@ -1250,7 +1252,7 @@ body {
     "itcss"
     "hobby__text";
     max-width: 500px;
-
+    margin: 0 15px;
   }
 } 
 
@@ -1301,25 +1303,27 @@ body {
  font-size: 25px;
  align-self: center;
  max-width: 517px;
+ line-height: 30px;
 }
 
 @media screen and (max-width: 1050px) {
   .hobby__text {
-    font-size: 23px
+    font-size: 23px;
+    line-height: 27px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .hobby__text {
-    font-size: 20px
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
 @media screen and (max-width: 610px) {
   .hobby__text {
-    font-size: 18px;
+    font-size: 19px;
     padding-top: 40px;
-    margin: 0 10px;
   }
 }
 
@@ -1443,6 +1447,12 @@ body {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .footer__email-link {
+    font-size: 25px;
+  }
+}
+
 
 .footer__email-link::before {
   content: '';
@@ -1499,6 +1509,12 @@ body {
   }
 }
 
+@media screen and (max-width: 330px) {
+  .footer__email-image {
+    width: 30px;
+  }
+}
+
 .footer__text-little {
   font-family: "CormorantGaramond-Regular";
   font-size: 25px;
@@ -1520,6 +1536,12 @@ body {
 @media screen and (max-width: 610px) {
   .footer__text-little {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .footer__text-little {
+    font-size: 19px;
   }
 }
 
