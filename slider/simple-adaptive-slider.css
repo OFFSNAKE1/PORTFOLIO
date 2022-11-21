@@ -145,7 +145,7 @@
   margin-right: 3px;
   margin-left: 3px;
   cursor: pointer;
-  background: url(../images/slider-swipe-opasity.png); 
+  background: url(../images/about/slider-swipe-opasity.png); 
   background-repeat: no-repeat;
   background-position: center; 
   border-radius: 50%;  
@@ -160,7 +160,7 @@
 }
 
 .itcss__indicator_active {
-  background: url(../images/slider-swipe.png);
+  background: url(../images/about/slider-swipe.png);
   background-repeat: no-repeat;
   background-position: center; 
   opacity: 1;

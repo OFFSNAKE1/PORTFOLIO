@@ -1453,6 +1453,12 @@ body {
   }
 }
 
+@media screen and (max-width: 280px) {
+  .footer__email-link {
+    font-size: 23px;
+  }
+}
+
 
 .footer__email-link::before {
   content: '';
@@ -1512,6 +1518,12 @@ body {
 @media screen and (max-width: 330px) {
   .footer__email-image {
     width: 30px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .footer__email-image {
+    width: 29px;
   }
 }
 
