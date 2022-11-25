@@ -980,6 +980,7 @@ body {
   flex-direction: column;
   padding-top: 15px;
   padding-bottom: 15px;
+  min-width: 250px;
 }
 
 .footer__email {

@@ -503,6 +503,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s linear, visibility .2s linear;
+    z-index: 20;
   }
   
   .menu__open {
@@ -595,3 +596,126 @@ body {
     margin-top: 50px;
     font-size: 16px;
   }
+
+  /* Контакты */
+
+  .contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+        ". vk ."
+        "inst eye tg"
+        ". email .";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+    row-gap: 40px;
+    column-gap: 20px;
+  }
+
+  .contact__link {
+    transition: opacity .4s ease-in;
+  }
+
+  .contact__link:hover {
+    opacity: 0.9;
+  }
+
+  .contact__image-icon {
+    width: 100px;
+    transition: all .7s ease;
+  }
+
+  .contact__image-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .contact__icon {
+    width: 100px;
+    z-index: 4;
+  }
+
+  .icon1 {
+    grid-area: vk;
+  }
+
+  .icon2 {
+    grid-area: inst;
+  }
+
+  .icon3 {
+    grid-area: email;
+  }
+
+  .icon4 {
+    grid-area: tg;
+  }
+
+  /* Глаз */
+
+  .contact__eye {
+    width: 420px;
+    z-index: 2;
+    grid-area: eye;
+    position: relative;
+  }
+
+  .contact__eye-size {
+    width: 100%;
+    z-index: 2;
+  }
+
+  .box {
+    display: flex;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    margin-top: 38px;
+  }
+  
+  .box .eye {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 50%;
+
+  }
+  
+  .box .eye .pupil {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/contact/eye.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+/* Подвал */
+
+.footer {
+  display: flex;
+  background: #1c1c1c;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__author {
+  color: #ebebeb;
+  font-family: "Roobert"; 
+  font-size: 17px;
+  word-spacing: 1px;
+}
