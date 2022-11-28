@@ -10,14 +10,22 @@
   <title>Обо мне</title>
 </head>
 <body>
-    
-    <header class="header">
-        <div class="header__home">
-              <a class="header__link" href="./index.html">PORTFOLIO</a>
-              <img class="header__briefcase" src="./images/briefcase.png" alt="Картинка Кейс">
-        </div>
-            <button type="button" class="menu__open-button"></button>
-    </header>
+
+<!-- Прелоудер -->
+
+<div class="loading">
+  <div class="percent">100</div>
+</div>
+  
+<header class="header">
+
+  <div class="header__home">
+    <a class="header__link" href="./index.html">PORTFOLIO</a>
+    <img class="header__briefcase" src="./images/briefcase.png" alt="Картинка Кейс">
+  </div>
+    <button type="button" class="menu__open-button"></button>
+
+</header>
 
 <main class="content">
 
@@ -69,7 +77,7 @@
                                        Программированием и дизайном я начал увлекаться на последнем курсе университета, 
                                        где учился на Таможенного логиста. Тогда я понял, что мне совершенно не нравится 
                                        моя специальнось и я хочу развиваться в другом направлении. 
-                                       Вы можете ознакомиться с моими работами в разделе "Works", список постоянно пополняется.
+                                       Вы можете ознакомиться с моими работами в разделе<a class="biography__link" href="./works.html" target="_blank"> Works</a>, список постоянно пополняется.
             </p>
     </div>
 
@@ -202,11 +210,12 @@
 
       </footer>
 
-              <!-- Кнопка возврата назад -->
+    
+    <!-- Кнопка возврата назад -->
 
-      <div class="btn-up btn-up_hide"></div>
+    <div class="btn-up btn-up_hide"></div>
 
-              <!-- Меню бургер -->
+    <!-- Меню бургер -->
               
     <div class="menu popup">
       <button type="button" class="menu__close-button"></button>
@@ -218,6 +227,7 @@
       </div>
     </div>
 
+    <script src="./scripts/preloader.js"></script>
     <script src="./scripts/popup-menu.js"></script>
     <script src="./scripts/element_show.js"></script>
     <script src="./scripts/arrow-up.js"></script>

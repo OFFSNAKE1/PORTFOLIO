@@ -671,7 +671,6 @@ body {
   }
 }  
 
-
 .biography__main-text {
   font-family: "CormorantGaramond-SemiBold";
   grid-area: biography__main-text;
@@ -699,13 +698,6 @@ body {
     padding-bottom: 5px;
   }
 }  
-
-/* @media screen and (max-width: 380px) {
-  .biography__main-text {
-    font-size: 30px;
-    padding-bottom: 5px;
-  }
-}   */
 
 .biography__image {
   grid-area: biography__image;
@@ -777,6 +769,15 @@ body {
     font-size: 19px;
   }
 }  
+
+.biography__link {
+  text-decoration: none;
+  color: #c74343;
+}
+
+.biography__link:hover {
+  opacity: 0.6;
+}
 
 /* Блок с печатаньем текста */
 
@@ -1621,5 +1622,40 @@ body {
   opacity: 0;
 }
 
+/* Лоудер для планшетов и смартфонов */
 
-     
+.percent {
+  display: none;
+}
+
+.loading {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+.loading {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1c1c1c;
+  z-index: 100;
+}
+
+.percent {
+  display: flex;
+  color: #ebebeb;
+  font-size: 100px;
+  font-family: "RoxboughCF-Regular";
+}
+
+.slow {
+  opacity: 0;
+  transition: 1s;
+}
+}
