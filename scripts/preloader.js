@@ -3,7 +3,7 @@
 function progress(){
     const percent = document.querySelector('.percent');
     let count = 4;
-    let loading = setInterval(animate, 50);
+    let loading = setInterval(animate, 17);
 
     function animate(){
       if(count == 100){
@@ -28,6 +28,6 @@ function hide(){
     document.querySelector('.loading').style.display = "none";
 }
 
-setTimeout(hideAnimate, 5850); // добавит плавную анимацию скрытия
-setTimeout(hide, 7000); // скроет блок со страницы после всех анимаций, чтобы он не занимал место
+setTimeout(hideAnimate, 2300); // добавит плавную анимацию скрытия
+setTimeout(hide, 3300); // скроет блок со страницы после всех анимаций, чтобы он не занимал место
 
