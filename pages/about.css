@@ -1634,28 +1634,30 @@ body {
 
 @media screen and (max-width: 900px) {
 
-.loading {
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #1c1c1c;
-  z-index: 100;
-}
-
-.percent {
-  display: flex;
-  color: #ebebeb;
-  font-size: 100px;
-  font-family: "RoxboughCF-Regular";
-}
-
-.slow {
-  opacity: 0;
-  transition: 1s;
-}
+  .loading {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    z-index: 100;
+  }
+  
+  .percent {
+    display: flex;
+    color: #ebebeb;
+    font-size: 100px;
+    font-family: "RoxboughCF-Regular";
+  }
+  
+  .hide {
+    transition: 1s;
+    transform: translateY(-100%);
+  }
+  
 }

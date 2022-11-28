@@ -753,8 +753,9 @@ body {
   font-family: "RoxboughCF-Regular";
 }
 
-.slow {
-  opacity: 0;
+.hide {
   transition: 1s;
+  transform: translateY(-100%);
 }
+
 }
