@@ -802,6 +802,12 @@ body {
     z-index: 2;
   }
 
+  @media screen and (max-width: 900px) {
+    .contact__eye-size {
+      z-index: 10;
+    }
+  }  
+
   .box {
     display: flex;
     margin: 0;
