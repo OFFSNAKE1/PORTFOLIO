@@ -28,4 +28,4 @@
 
 ## Ссылка на мой сайт
 
-1. [PORTFOLIO](https://offsnake1.github.io/PORTFOLIO/index.html)
+[PORTFOLIO](https://offsnake1.github.io/PORTFOLIO/index.html)
