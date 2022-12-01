@@ -1,0 +1,56 @@
+/* Кнока возврата назад */
+
+.btn-up {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background: url(../images/arrow-up-deskop.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+@media screen and (max-width: 1250px) {
+.btn-up {
+  right: 20px;
+}
+} 
+
+@media screen and (max-width: 1050px) {
+.btn-up {
+  right: 10px;
+}
+} 
+
+@media screen and (max-width: 900px) {
+.btn-up {
+  right: 5px;
+}
+} 
+
+@media screen and (max-width: 610px) {
+.btn-up {
+  background: url(../images/arrow-up-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 32px;
+  height: 32px;
+  right: 10px;
+}
+} 
+  
+.btn-up:hover {
+opacity: 0.5;
+} 
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+opacity: 0;
+}

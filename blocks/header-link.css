@@ -1,0 +1,120 @@
+/* Хедр текст + картинка + ссылка */
+
+.header {
+    padding: 25px 0px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .header {
+      padding: 15px 0px 0;
+    }
+  } 
+  
+  @media screen and (max-width: 1125px) {
+    .header {
+      padding: 14px 0px 0;
+    }
+  }  
+  
+  @media screen and (max-width: 600px) {
+    .header {
+      padding: 15px 0px 0;
+    }
+  }  
+  
+  @media screen and (max-width: 400px) {
+    .header {
+      padding: 18px 0px 0;
+    }
+  }  
+  
+  @media screen and (max-width: 330px) {
+    .header {
+      padding: 21px 0px 0;
+    }
+  }  
+  
+  .header__home {
+   display: flex;
+   align-items: center;
+  }
+  
+  .header__link {
+   font-family: "RoxboughCF-Regular";
+   text-decoration: none;
+   list-style-type: none;   
+   color: #1c1c1c;
+   font-size: 35px;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    .header__link {
+      font-size: 35px;
+    }
+  }   
+  
+  @media screen and (max-width: 1125px) {
+    .header__link {
+      font-size: 40px;
+    }
+  }   
+  
+  @media screen and (max-width: 600px) {
+    .header__link {
+      font-size: 30px;
+    }
+  }   
+  
+  @media screen and (max-width: 400px) {
+    .header__link {
+      font-size: 25px;
+    }
+  }   
+  
+  @media screen and (max-width: 330px) {
+    .header__link {
+      font-size: 20px;
+    }
+  }   
+  
+  .header__briefcase {
+    width: 100%;
+    height: 38px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+  }
+  
+  @media screen and (max-width: 1125px) {
+    .header__briefcase {
+      width: 50px;
+      height: 50px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+    }  
+  } 
+  
+  @media screen and (max-width: 600px) {
+    .header__briefcase {
+      width: 40px;
+      height: 40px;
+    }  
+  } 
+  
+  @media screen and (max-width: 400px) {
+    .header__briefcase {
+      width: 35px;
+      height: 35px;
+    }  
+  } 
+  
+  @media screen and (max-width: 330px) {
+    .header__briefcase {
+      width: 30px;
+      height: 30px;
+      padding-bottom: 4px;
+    }  
+  } 
