@@ -1,8 +1,8 @@
 /* Лоудер для планшетов и смартфонов */
 
-.percent {
+/* .percent {
     display: none;
-  }
+  } */
   
   .loading {
     display: none;
@@ -23,13 +23,27 @@
       background-color: #1c1c1c;
       z-index: 100;
     }
+
+    .loading__image {
+      width: 120px;
+      animation: eye-rotate linear 1s infinite;
+    }
+
+    @keyframes eye-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
     
-    .percent {
+    /* .percent {
       display: flex;
       color: #ebebeb;
       font-size: 100px;
       font-family: "RoxboughCF-Regular";
-    }
+    } */
     
     .hide {
       transition: 1s;
