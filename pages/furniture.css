@@ -1,0 +1,30 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/loader.css);
+@import url(../blocks/button-up.css);
+@import url(../blocks/scroll.css);
+@import url(../blocks/header-link.css);
+@import url(../blocks/footer-email.css);
+@import url(../blocks/design.css);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roobert"; 
+  color: #1c1c1c;
+  background-color: #ebebeb; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  height: 100%;
+}
