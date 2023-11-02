@@ -714,13 +714,13 @@ body {
 
 @keyframes ux-ui {
   100% {
-    width: 40%;
+    width: 85%;
   }
 }
 
 @keyframes figma {
   100% {
-    width: 60%;
+    width: 90%;
   }
 }
 
